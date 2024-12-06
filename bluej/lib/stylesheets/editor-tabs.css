@@ -1,18 +1,23 @@
 .tabbed-editor > .tab-header-area > .tab-header-background {
-    -fx-background-color: hsb(0, 0%, 50%);
+    -fx-background-color: #11111b;
 }
 
 .tabbed-editor > .tab-header-area .tab {
     -fx-border-width: 0 0 2 0;
-    -fx-border-color: hsb(0, 0%, 30%);
+    -fx-border-color: #7f849c;
 }
 .tabbed-editor > .tab-header-area .bj-tab-error .tab-label {
     -fx-border-width : 0 0 2 0;
-    -fx-border-color: red;
+    -fx-border-color: #f38ba8;
+}
+
+.tabbed-editor > .tab-header-area .moe-tab {
+    -fx-background-color: #b4befe;
+
 }
 .tabbed-editor > .tab-header-area .moe-tab:selected {
     /* Remove border at bottom of tab when selected: */
-    -fx-background-color: rgb(225, 225, 225) !important;
+    -fx-background-color: #cba6f7 !important;
     -fx-border-color: transparent !important;
 }
 .tabbed-editor > .tab-header-area  {
@@ -20,5 +25,5 @@
 }
 
 .tabbed-editor .tab-close-button:hover {
-    -fx-background-color: darkred;
+    -fx-background-color: #f38ba8;
 }

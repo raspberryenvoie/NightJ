@@ -1,6 +1,6 @@
 .flow-top-bar {
     -fx-padding: 0.75em 1em 0.75em 1em;
-    -fx-background-color: hsb(0, 0%, 50%), rgb(225, 225, 225);
+    -fx-background-color: hsb(0, 0%, 50%), #1e1e2e;
     -fx-background-insets: 0 0 0 0, 0 0 1 0;
 }
 .flow-top-bar-buttons {
@@ -10,23 +10,25 @@
 }
 .flow-top-bar-buttons > .button {
     -fx-label-padding: 0 0.3em 0 0.3em;
+    -fx-background-color: #45475a;
+    -fx-text-fill: #bac2de;
 }
 .margin-and-text-line {
-    -fx-background-color: white;
+    -fx-background-color: #11111b;
     -fx-cursor: text;
 }
 .flow-margin-line {
-    -fx-stroke: grey;
+    -fx-stroke: #11111b;
 }
 .flow-margin-background {
-    -fx-background-color: white;
+    -fx-background-color: #11111b;
     -fx-cursor: default;
 }
 .margin-and-text-line:bj-margin-uncompiled .flow-margin-background {
-    -fx-background-color: hsb(0, 0%, 75%);
+    -fx-background-color: #181825;
 }
 .margin-and-text-line:bj-margin-error .flow-margin-background {
-    -fx-background-color: hsb(0, 70%, 50%);
+    -fx-background-color: #f38ba8;
 }
 .moe-breakpoint-icon, .moe-step-mark-icon {
     -fx-cursor: default;
@@ -36,14 +38,14 @@
     -fx-alignment: center-right;
     -fx-graphic-text-gap: 0;
     -fx-label-padding: 0 2 0 0;
-    -fx-text-fill: black;
+    -fx-text-fill: #bac2de;
     -fx-cursor: default;
 }
 .margin-and-text-line:bj-margin-error .flow-line-label {
-    -fx-text-fill: white;
+    -fx-text-fill: #cdd6f4;
 }
 .text-line .flow-selection {
-    -fx-fill: hsb(211, 50%, 90%);
+    -fx-fill: #6c7086;
     -fx-stroke: null;
 }
 .text-line .flow-find-result {
@@ -51,7 +53,7 @@
     -fx-stroke: null;
 }
 .text-line .flow-bracket-match {
-    -fx-fill: hsb(0, 0%, 70%);
+    -fx-fill: #6c7086;
     -fx-stroke: null;
 }
 
@@ -62,5 +64,5 @@
 
 
 .line-container {
-    -fx-background-color: white;
+    -fx-background-color: #11111b;
 }

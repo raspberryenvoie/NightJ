@@ -12,7 +12,7 @@
     -fx-label-padding: 0 0.3em 0 0.3em;
 }
 .moe-bottom-bar {
-    -fx-background-color: hsb(0, 0%, 50%), rgb(225, 225, 225);
+    -fx-background-color: #b4befe;
     -fx-background-insets: 0 0 0 0, 1 0 0 0;
 }
 .moe-bottom-status-row {
@@ -20,7 +20,7 @@
 }
 .moe-status-label-wrapper {
     -fx-border-style: solid inside;
-    -fx-border-color: hsb(0, 0%, 70%);
+    -fx-border-color: transparent;
     -fx-border-width: 0 0 0 1;
 }
 .moe-status-label-wrapper:bj-status-error {
@@ -51,7 +51,7 @@
 .moe-find-panel {
     -fx-padding: 0.5em 1em 0.5em 1em;
     -fx-border-style: solid inside;
-    -fx-border-color: hsb(0, 0%, 70%);
+    -fx-border-color: transparent;
     -fx-border-width: 0 0 1 0;
     -fx-border-insets: 0 5 0 5;
 }
@@ -134,7 +134,7 @@
     /* -rtfx-underline-width: 2; */
 }
 .moe-find-field:bj-no-find-result {
-    -fx-text-fill: red;
+    -fx-text-fill: #f38ba8;
 }
 /* Don't show when printing */
 .moe-editor-pane:bj-screen .moe-bracket-highlight {

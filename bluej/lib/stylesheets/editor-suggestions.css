@@ -1,13 +1,13 @@
 /* Styles for suggestions (i.e. code completion) */
 
 .root {
-  suggestion-background: white;
+  suggestion-background: #181825;
 }
 
 .suggestion-list {
     -fx-background-color: suggestion-background;
     -fx-padding: 2 0 0 0;
-    -fx-border-color: hsb(0, 0%, 70%);
+    -fx-border-color: transparent;
     -fx-border-width: 1;
     -fx-border-style: solid outside;
 
@@ -46,13 +46,13 @@
 }
 
 .suggestion:bj-suggestion-highlight {
-    -fx-background-color: hsb(180, 30%, 90%); 
+    -fx-background-color: #6c7086; 
 }
 
 .suggestion-similar-heading {
     -fx-label-padding: 2 0 2 20;
-    -fx-background-color: hsb(0, 0%, 95%);
-    -fx-text-fill: hsb(0, 0%, 40%);
+    -fx-background-color: transparent;
+    -fx-text-fill: #cdd6f4;
     /* To get some padding: */
     -fx-border-color: transparent;
     -fx-border-width: 5 0 2 0;
@@ -60,12 +60,12 @@
 
 /* Make the similar suggestions grey, to de-emphasise */
 .suggestion:bj-suggestion-similar .label {
-    -fx-text-fill: hsb(0, 0%, 50%);
+    -fx-text-fill: #cdd6f4;
 }
 
 .suggestion-none {
     -fx-label-padding: 10 20 10 20;
-    -fx-text-fill: hsb(0, 0%, 40%);
+    -fx-text-fill: #cdd6f4;
 }
 
 .suggestion-javadoc, .suggestion-file-preview {
@@ -98,7 +98,7 @@
 }
 
 .suggestion-more-label-pane {
-    -fx-background-color: white;
+    -fx-background-color: #181825;
     -fx-border-width: 1 0 1 0;
     -fx-border-color: hsb(0, 0%, 70%) transparent hsb(0, 0%, 70%) transparent;
     -fx-border-style: solid inside;

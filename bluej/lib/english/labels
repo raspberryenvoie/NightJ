@@ -170,7 +170,7 @@ extmgr.error.cannotload=Extension could not be loaded
 #---------------
 #Editor labels
 #---------------
-editor.title=BlueJ: Editor
+editor.title=NightJ: Editor
 
 #button lables for toolbar commands
 editor.compileLabel = Compile
@@ -370,7 +370,7 @@ utility.packageChooser.previewPane1=Preview of possible
 utility.packageChooser.previewPane2=package structure
 
 # dialog titles and texts
-pkgmgr.title=BlueJ:  
+pkgmgr.title=NightJ:  
 
 pkgmgr.newPkg.title=New Project
 pkgmgr.newMEpkg.title=New ME Project

@@ -1,15 +1,15 @@
 .root {
     class-target: rgb(239, 204, 149);
     test-target: rgb(166, 191, 137);
-    css-target: rgb(197, 205, 206);
-    text-target: rgb(197, 205, 206);
+    css-target: #cdd6f4;
+    text-target: #cdd6f4;
     externalfile-target: rgb(156, 220, 240);
-    window-background: rgb(229, 229, 229);
-    class-diagram: rgb(249,247,242);
-    object-bench: rgb(239,237,232);
-    codepad: rgb(239,237,232);
-    codepad-input: rgb(249,247,242);
-    pane-border-color: gray;
+    window-background: #11111b;
+    class-diagram: #181825;
+    object-bench: #181825;
+    codepad: #181825;
+    codepad-input: #181825;
+    pane-border-color: #11111b;
 }
 
 .pmf-root {
@@ -36,23 +36,23 @@
     -fx-background-radius: 5px;
 }
 .pmf-empty-project-msg {
-    -fx-text-fill: gray;
+    -fx-text-fill: #cdd6f4;
     -fx-font-size: 14pt;
 }
 .pmf-no-classes-msg {
-    -fx-text-fill: gray;
+    -fx-text-fill: #cdd6f4;
     -fx-font-size: 14pt;
 }
 
 .triangle-arrow {
     -fx-cursor: hand;
-    -fx-fill: darkgray;
+    -fx-fill: #a6adc8;
 }
 .triangle-arrow:hover {
-    -fx-fill: derive(darkgray, 20%);
+    -fx-fill: derive(#a6adc8, 20%);
 }
 .pmf-triangle-foldout-wrapper:bj-hover-long {
-    -fx-background-color: white;
+    -fx-background-color: #11111b;
     -fx-cursor: hand;
 }
 
@@ -70,6 +70,9 @@
     -fx-max-width: 130px;
 }
 .pmf-tools .button {
+    -fx-background-color: #45475a;
+    -fx-text-fill: #bac2de;
+
     -fx-padding: 0.333333em;
     -fx-max-width: 9999;
 }
@@ -86,7 +89,7 @@
 }
 .pmf-tools-test > .title > .text, .pmf-tools-team > .title > .text {
     /* Despite JavaFX documentation, we must use -fx-fill not -fx-text-fill: */
-    -fx-fill: gray;
+    -fx-fill: #a6adc8;
     -fx-font-weight: bold;
 }
 .pmf-tools-test > .content, .pmf-tools-team > .content {
@@ -120,6 +123,7 @@
     -fx-stroke-type: inside;
 }
 .reset-vm-button {
+    -fx-background-color: #181825;
     -fx-padding: 3 5 0 5;
 }
 .reset-vm-button:bj-no-hover {
@@ -127,7 +131,7 @@
 }
 .reset-vm-button-arrow {
     -fx-stroke-width: 2;
-    -fx-stroke: rgb(140, 140, 140);
+    -fx-stroke: #bac2de;
 }
 
 .test-status-message {
@@ -195,7 +199,7 @@
 }
 .class-target-name {
     -fx-border-width: 0 0 1 0;
-    -fx-border-color: black;
+    -fx-border-color: #181825;
 }
 .class-target-name, .package-target-name {
     -fx-font-weight: bold;
@@ -225,8 +229,8 @@
     -fx-fill: rgba(0, 0, 0, 0.2);
 }
 .pmf-create-extends-tip {
-    -fx-background-color: black;
-    -fx-text-fill: white;
+    -fx-background-color: #181825;
+    -fx-text-fill: #cdd6f4;
     -fx-label-padding: 3px;
     -fx-background-radius: 4px;
 }
@@ -283,17 +287,18 @@
 }
 
 .codepad-row {
-    -fx-text-fill: black;
+    -fx-text-fill: #cdd6f4;
     -fx-wrap-text: false;
     -fx-background-color: codepad;
     -fx-background-radius: 5px;
     -fx-padding: 4px 0px 0px 10px;
 }
 .codepad-history:focused .codepad-row:selected {
-    -fx-background-color: lightblue;
+    -fx-background-color: #45475a;
+    
 }
 .codepad-row:bj-codepad-error {
-    -fx-text-fill: hsb(355, 95%, 50%);
+    -fx-text-fill: #f38ba8;
 
 }
 .codepad-row:bj-codepad-output {
@@ -314,8 +319,10 @@
     -fx-background-color: linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border),
             linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
        And here's our translation to use our background colour:*/
-    -fx-background-color: lightgray, codepad-input;
+    -fx-background-color: white, codepad-input;
     -fx-background-radius: 5px, 6px;
+    -fx-text-fill: #cdd6f4;
+
 }
 .codepad .text-field:focused {
     -fx-background-color: black, codepad-input;
@@ -324,7 +331,7 @@
 }
 
 .codepad-add-object-arrow {
-    -fx-stroke: rgba(120, 80, 80, 0.8);
+    -fx-stroke: #eba0ac;
     -fx-stroke-width: 6;
     /*-fx-stroke-line-cap: round;*/
     -fx-stroke-line-join: round;
