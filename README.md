@@ -1,9 +1,12 @@
 <h1 align="center">NightJ</h1>
 
 <p align="center">
-  <img src="bluej/icons/bluej-icon-512-embossed.png" width="128">
+    <img src="bluej/icons/bluej-icon-512-embossed.png" width="128">
 </p>
 
+<p align="center">
+    <img src="bluej/resources/nightj-screenshot.jpg">
+</p>
 <h3 align="center">Dark Mode in BlueJ</h3>
 
 ---------
