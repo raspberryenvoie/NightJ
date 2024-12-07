@@ -4,7 +4,7 @@
   <img src="bluej/icons/bluej-icon-512-embossed.png" width="128">
 </p>
 
-<h3 align="center">Dark Mode for BlueJ</h3>
+<h3 align="center">Dark Mode in BlueJ</h3>
 
 ---------
 
@@ -14,7 +14,7 @@ Simply download NightJ from the [releases page](https://github.com/raspberryenvo
 
 ## 2. Contributions are needed
 
-While NightJ aims to implement dark mode for BlueJ, many GUI elements still use light mode.
+While NightJ aims to implement dark mode in BlueJ, many GUI elements still use light mode.
 
 So feel free to make a pull request to improve it!
 
