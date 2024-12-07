@@ -1,12 +1,10 @@
-<center>
+<h1 align="center">NightJ</h1>
 
-<h1>NightJ</h1>
+<p align="center">
+  <img src="bluej/icons/bluej-icon-512-embossed.png" width="128">
+</p>
 
-<img src="bluej/icons/bluej-icon-512-embossed.png" width="128">
-
-<h3>Dark Mode for BlueJ</h3>
-
-</center>
+<h3 align="center">Dark Mode for BlueJ</h3>
 
 ---------
 
