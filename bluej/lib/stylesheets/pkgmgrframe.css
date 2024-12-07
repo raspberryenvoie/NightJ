@@ -224,9 +224,9 @@
 }
 .marquee {
     -fx-stroke-width: 2;
-    -fx-stroke: black;
+    -fx-stroke: #cdd6f4;
     -fx-stroke-type: outside;
-    -fx-fill: rgba(0, 0, 0, 0.2);
+    -fx-fill: rgba(127, 132, 156, 0.2);
 }
 .pmf-create-extends-tip {
     -fx-background-color: #181825;
