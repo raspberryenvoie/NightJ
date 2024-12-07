@@ -623,7 +623,7 @@ public final class PackageEditor extends StackPane
 
         for (ExtendsDepInfo d : extendsLines)
         {
-            g.setStroke(d.creating ? Color.BLUE : Color.BLACK);
+            g.setStroke(d.creating ? Color.web("0x89b4fa") : Color.web("0xcdd6f4"));
             g.setLineWidth(d.selected ? 3.0 : 1.0);
             Dependency.Line line = d.line;
             double fromY = line.from.getY();
@@ -669,7 +669,7 @@ public final class PackageEditor extends StackPane
             double dst_x = d.getDestX();
             double dst_y = d.getDestY();
 
-            g.setStroke(Color.BLACK);
+            g.setStroke(Color.web("0xcdd6f4"));
             // Draw the end arrow
             int delta_x = d.isEndLeft() ? -10 : 10;
 
