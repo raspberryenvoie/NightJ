@@ -23,7 +23,10 @@ So feel free to make a pull request to improve it!
 
 ## 3. Implementation
 
-NightJ uses the Mocha [Catppuccin](https://github.com/catppuccin/catppuccin) palette. This was essentially done by modifying the CSS files in `bluej/lib/stylesheets`.
+NightJ was essentially implemented by modifying the CSS files in `bluej/lib/stylesheets`.
+See [JavaFX CSS Reference Guide](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html).
+
+It uses the Mocha [Catppuccin](https://github.com/catppuccin/catppuccin) color palette.
 
 ## 4. Building and running
 
