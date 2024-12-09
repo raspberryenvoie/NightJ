@@ -12,12 +12,12 @@
 }
 
 .tabbed-editor > .tab-header-area .moe-tab {
-    -fx-background-color: #b4befe;
+    -fx-background-color: #cdd6f4;
 
 }
 .tabbed-editor > .tab-header-area .moe-tab:selected {
     /* Remove border at bottom of tab when selected: */
-    -fx-background-color: #cba6f7 !important;
+    -fx-background-color: #b4befe !important;
     -fx-border-color: transparent !important;
 }
 .tabbed-editor > .tab-header-area  {

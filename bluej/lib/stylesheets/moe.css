@@ -32,7 +32,7 @@
     -fx-text-fill: hsb(0, 0%, 70%);
     -fx-label-padding: 0 8 0 8;
     -fx-text-alignment: center;
-
+    -fx-text-fill: #6c7086; /* "saved" indication */
     -fx-min-width: 5em;
     -fx-alignment: top-center;
 }
@@ -145,4 +145,21 @@
 .moe-step-mark-icon {
     -fx-stroke-width: 1;
     -fx-stroke-type: outside;
+}
+
+/* Added */
+/* Customize find and replace fields*/
+.moe-bottom-bar .text-field {
+    -fx-text-fill: #cdd6f4;
+    -fx-background-color: #313244;
+    -fx-highlight-fill: #6c7086;
+}
+
+.check-box .box {
+    -fx-background-color: #313244;
+}
+
+
+.check-box:selected .box .mark {
+    -fx-background-color: #cdd6f4
 }

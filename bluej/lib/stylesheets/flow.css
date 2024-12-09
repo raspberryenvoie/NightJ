@@ -1,6 +1,6 @@
 .flow-top-bar {
     -fx-padding: 0.75em 1em 0.75em 1em;
-    -fx-background-color: hsb(0, 0%, 50%), #1e1e2e;
+    -fx-background-color: #1e1e2e;
     -fx-background-insets: 0 0 0 0, 0 0 1 0;
 }
 .flow-top-bar-buttons {
@@ -49,7 +49,7 @@
     -fx-stroke: null;
 }
 .text-line .flow-find-result {
-    -fx-fill: hsb(211, 20%, 99%);
+    -fx-fill: #6c7086;
     -fx-stroke: null;
 }
 .text-line .flow-bracket-match {
@@ -65,4 +65,64 @@
 
 .line-container {
     -fx-background-color: #11111b;
+}
+
+/* Added */
+
+.button {
+    -fx-background-color: #45475a;
+}
+
+.combo-box,
+.combo-box .list-cell,
+.combo-box .list-view,
+.combo-box .list-view .list-cell {
+    -fx-background-color: #45475a;
+    -fx-text-fill: #cdd6f4;
+}
+
+.combo-box .list-view .list-cell:hover {
+    -fx-background-color: #6c7086;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #cdd6f4;
+}
+
+/* Scroll bar modification */
+
+.scroll-bar:vertical,
+.scroll-bar:horizontal,
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-background-color: #11111b;
+
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-opacity: 0; /* Makes the buttons invisible */
+}
+
+.scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb {
+    -fx-background-color: #b4befe;
+}
+
+.scroll-pane .corner {
+    -fx-background-color: transparent;
+}
+
+/* Needed for copy paste context menu*/
+.context-menu,
+.context-menu .menu-item {
+    -fx-text-fill: #cdd6f4;
+    -fx-background-color: #313244;
+}
+
+.context-menu .menu-item:hover {
+    -fx-background-color: #6c7086;
+}
+
+.context-menu .label {
+    -fx-text-fill: #cdd6f4;
 }

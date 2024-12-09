@@ -1,9 +1,9 @@
 /* Shared */
 .dialog-error-label {
-    -fx-text-fill: derive(red, -20%);
+    -fx-text-fill: derive(#f38ba8, -20%);
 }
 .text-field:bj-dialog-error {
-    -fx-border-color: derive(red, -20%);
+    -fx-border-color: derive(#f38ba8, -20%);
     -fx-border-width: 3;
     -fx-border-insets: -3;
     -fx-border-radius: 3;
@@ -618,4 +618,38 @@
 
     -fx-min-height:  16em;
     -fx-pref-height: 18em;
+}
+
+/* Added */
+
+.dialog-pane {
+    -fx-background-color: #181825;
+}
+
+.text {
+    -fx-fill: #cdd6f4;
+}
+
+.radio-button .radio {
+    -fx-background-color: #45475a;
+}
+
+.radio-button:selected .radio .dot {
+    -fx-background-color: #cdd6f4;
+    -fx-background-insets: 0; /* Center dot */
+}
+
+.text-field {
+    -fx-text-fill: #cdd6f4;
+    -fx-background-color: #45475a;
+    -fx-highlight-fill: #6c7086;
+}
+
+.radio-button {
+    -fx-background-color: transparent;
+}
+
+.button {
+    -fx-text-fill: #cdd6f4;
+    -fx-background-color: #45475a;
 }

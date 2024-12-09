@@ -111,3 +111,9 @@
 .suggestion-top-level {
     -fx-padding: 1; /* Needed to get border of inner item to show */
 }
+
+/* Added */
+
+.suggestion .label {
+    -fx-text-fill: #cdd6f4; /* Set appropriate color for text in suggestion box */
+}

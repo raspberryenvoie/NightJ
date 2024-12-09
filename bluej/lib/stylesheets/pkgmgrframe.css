@@ -1,15 +1,15 @@
 .root {
-    class-target: rgb(239, 204, 149);
-    test-target: rgb(166, 191, 137);
+    class-target: #b4befe;
+    test-target: #a6e3a1;
     css-target: #cdd6f4;
     text-target: #cdd6f4;
-    externalfile-target: rgb(156, 220, 240);
+    externalfile-target: #74c7ec;
     window-background: #11111b;
-    class-diagram: #181825;
-    object-bench: #181825;
-    codepad: #181825;
-    codepad-input: #181825;
-    pane-border-color: #11111b;
+    class-diagram: #1e1e2e;
+    object-bench: #1e1e2e;
+    codepad: #1e1e2e;
+    codepad-input: #313244;
+    pane-border-color: transparent;
 }
 
 .pmf-root {
@@ -34,6 +34,7 @@
 }
 .pmf-central-pane > .scroll-pane, .pmf-central-pane > .scroll-pane > .viewport {
     -fx-background-radius: 5px;
+    -fx-background-color: pane-border-color; /* Remove border */
 }
 .pmf-empty-project-msg {
     -fx-text-fill: #cdd6f4;
@@ -107,12 +108,14 @@
 .machine-icon-bar-holder {
     -fx-border-width: 1;
     -fx-border-style: solid inside;
-    -fx-border-color: rgb(190, 190, 190);
+    -fx-border-color: transparent;
+    -fx-background-color: #1e1e2e;
+
     -fx-border-radius: 4;
 }
 .machine-icon-bar:bj-active {
     -fx-stroke: lightgray;
-    -fx-fill: navy;
+    -fx-fill: #b4befe;
 }
 .machine-icon-bar {
     -fx-arc-height: 6;
@@ -123,7 +126,7 @@
     -fx-stroke-type: inside;
 }
 .reset-vm-button {
-    -fx-background-color: #181825;
+    -fx-background-color: #1e1e2e;
     -fx-padding: 3 5 0 5;
 }
 .reset-vm-button:bj-no-hover {
@@ -162,7 +165,7 @@
 }
 .class-target, .package-target, .package-target-preview-item, .css-target, .text-target, .externalfile-target {
     -fx-border-width: 1;
-    -fx-border-color: black;
+    -fx-border-color: #bac2de;
     -fx-border-style: solid outside; /* Prevents relayout when border gets thicker */
     /* We set this programatically because we vary it when the mouse moves to the bottom corner: */
     /*-fx-cursor: hand; */
@@ -199,7 +202,7 @@
 }
 .class-target-name {
     -fx-border-width: 0 0 1 0;
-    -fx-border-color: #181825;
+    -fx-border-color: #1e1e2e;
 }
 .class-target-name, .package-target-name {
     -fx-font-weight: bold;
@@ -211,7 +214,7 @@
     -fx-font-size: 8pt;
 }
 .class-action-inbuilt > .label, .object-action-inbuilt > .label {
-    -fx-text-fill: darkred;
+    -fx-text-fill: #cdd6f4; /* Text color in context menu creating new files */
 }
 .object-action-inbuilt > .label {
     -fx-font-style: italic;
@@ -229,7 +232,7 @@
     -fx-fill: rgba(127, 132, 156, 0.2);
 }
 .pmf-create-extends-tip {
-    -fx-background-color: #181825;
+    -fx-background-color: #1e1e2e;
     -fx-text-fill: #cdd6f4;
     -fx-label-padding: 3px;
     -fx-background-radius: 4px;
@@ -242,6 +245,7 @@
     -fx-border-color: pane-border-color;
     -fx-border-radius: 5px;
     -fx-background-radius: 5px;
+    -fx-background-color: object-bench;
 }
 .object-bench > .viewport {
     -fx-background-color: object-bench;
@@ -294,7 +298,7 @@
     -fx-padding: 4px 0px 0px 10px;
 }
 .codepad-history:focused .codepad-row:selected {
-    -fx-background-color: #45475a;
+    -fx-background-color: #6c7086;
     
 }
 .codepad-row:bj-codepad-error {
@@ -319,13 +323,13 @@
     -fx-background-color: linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border),
             linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
        And here's our translation to use our background colour:*/
-    -fx-background-color: white, codepad-input;
+    -fx-background-color: codepad-input;
     -fx-background-radius: 5px, 6px;
     -fx-text-fill: #cdd6f4;
 
 }
 .codepad .text-field:focused {
-    -fx-background-color: black, codepad-input;
+    -fx-background-color: codepad-input;
     -fx-background-radius: 5px, 6px;
     -fx-background-insets: 0, 2;
 }
@@ -335,4 +339,41 @@
     -fx-stroke-width: 6;
     /*-fx-stroke-line-cap: round;*/
     -fx-stroke-line-join: round;
+}
+
+/* Added */
+
+.scroll-bar:vertical,
+.scroll-bar:horizontal,
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-background-color: #11111b;
+
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-opacity: 0; /* Makes the buttons invisible */
+}
+
+.scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb {
+    -fx-background-color: #b4befe;
+}
+
+.scroll-pane .corner {
+    -fx-background-color: transparent;
+}
+
+.context-menu,
+.context-menu .menu-item {
+    -fx-text-fill: #cdd6f4;
+    -fx-background-color: #313244;
+}
+
+.context-menu .menu-item:hover {
+    -fx-background-color: #6c7086;
+}
+
+.context-menu .label {
+    -fx-text-fill: #cdd6f4;
 }

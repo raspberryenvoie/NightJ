@@ -253,14 +253,14 @@ public class FindPanel extends GridPane
         // and various display aspects like shadow size and stroke width are dependent on size, so it makes
         // sense to have it all together in one place:
         Circle circle = new Circle(10);
-        circle.setEffect(new InnerShadow(BlurType.GAUSSIAN, Color.rgb(128, 128, 128, 0.4), 2, 0.5, 1, 1));
-        circle.setFill(Color.rgb(190, 190, 190, 1.0));
+        //circle.setEffect(new InnerShadow(BlurType.GAUSSIAN, Color.rgb(128, 128, 128, 0.4), 2, 0.5, 1, 1));
+        circle.setFill(Color.web("0x313244"));
         Line lineA = new Line(0, 0, 7, 7);
         lineA.setStrokeWidth(3);
-        lineA.setStroke(Color.rgb(240, 240, 240));
+        lineA.setStroke(Color.web("0xcdd6f4"));
         Line lineB = new Line(0, 7, 7, 0);
         lineB.setStrokeWidth(3);
-        lineB.setStroke(Color.rgb(240, 240, 240));
+        lineB.setStroke(Color.web("0xcdd6f4"));
         StackPane stackPane = new StackPane(circle, lineA, lineB);
         // Make it a bit easier to click on by using square bounds, not the inner circle:
         stackPane.setPickOnBounds(true);

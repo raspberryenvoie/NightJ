@@ -2813,7 +2813,7 @@ public class PkgMgrFrame
         // See http://jxnblk.com/paths/?d=M2%2010%20L22%2010%20L22%2016%20L32%2010%20L22%204%20L22%2010%20Z
         arrow.setContent("M2 10 L22 10 L22 16 L32 10 L22 4 L22 10 Z");
         arrow.setFill(null);
-        arrow.setStroke(Color.BLACK);
+        arrow.setStroke(Color.web("0xcdd6f4"));
         imgExtendsButton.setGraphic(arrow);
         topButtons.getChildren().add(imgExtendsButton);
         Button compileButton = compileAction.makeButton();

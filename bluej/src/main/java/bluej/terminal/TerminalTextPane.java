@@ -405,8 +405,8 @@ public abstract class TerminalTextPane extends BaseEditorPane
                     CornerRadii radii = new CornerRadii(topRadius, topRadius, bottomRadius, bottomRadius, false);
                     Insets bodyInsets = new Insets(topInset, 1, bottomInset, 1);
                     map.computeIfAbsent(i, _i -> new ArrayList<>()).add(new BackgroundItem(leftInset, rightInset - leftInset,
-                            new BackgroundFill(Color.LIGHTGRAY, radii, null),
-                            new BackgroundFill(Color.WHITE, radii, bodyInsets)));
+                            new BackgroundFill(Color.web("0x45475a"), radii, null),
+                            new BackgroundFill(Color.web("0x181825"), radii, bodyInsets)));
                 }
             }
         }

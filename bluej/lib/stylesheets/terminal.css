@@ -4,26 +4,27 @@
 }
 */
 .terminal-split {
+    -fx-background-color: #313244;
     -fx-orientation: vertical;
 }
 .terminal-output {
-    -fx-fill: black;
-    -fx-background-color: white;
+    -fx-fill: #cdd6f4;
+    -fx-background-color: #181825;
     -fx-cursor: text;
 }
 .terminal-input {
-    -fx-fill: blue;
+    -fx-fill: #89b4fa;
 }
 .terminal-method-record {
-    -fx-fill: brown;
+    -fx-fill: #eba0ac;
 }
 .terminal-error {
-    -fx-fill: red;
+    -fx-fill: #f38ba8;
     -fx-background-color: white;
     -fx-cursor: text;
 }
 .terminal-output .flow-selection, .terminal-error .flow-selection {
-    -fx-fill: hsb(211, 50%, 90%);
+    -fx-fill: #45475a;
     -fx-stroke: null;
 }
 .terminal-stack-link {
@@ -37,10 +38,39 @@
 
 /* Show prompt text even when we are focused: */
 .terminal-input-field {
-    -fx-prompt-text-fill: hsb(0, 0%, 70%);
+    -fx-prompt-text-fill:#cdd6f4;
 }
 
 /* Slightly darker than white to make input field stand out: */
 .terminal, .terminal-error {
-    -fx-background-color: rgb(251, 251, 251);
+    -fx-background-color: #181825;
+}
+
+/* Added */
+
+.scroll-bar:vertical,
+.scroll-bar:horizontal,
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-background-color: #11111b;
+
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-opacity: 0; /* Makes the buttons invisible */
+}
+
+.scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb {
+    -fx-background-color: #b4befe;
+}
+
+.scroll-pane .corner {
+    -fx-background-color: transparent;
+}
+
+.text-field {
+    -fx-text-fill: #cdd6f4;
+    -fx-background-color: #313244;
+    -fx-highlight-fill: #6c7086;
 }
